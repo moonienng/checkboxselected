@@ -20,13 +20,13 @@
         $('#input').change(function()
         {
         var input = $(this).val();
-        $('ul').append('<input type="checkbox" class="tarefas">' + input +'<i class="fas fa-trash"> </input>');
+        $('ul').append('<input type="checkbox" class="tarefa">' + input +'<i class="fas fa-trash"> </input>');
         $(this).val('');
         }
         );
     });
     $('.tarefas').on("click", function() {
-        $("#selecionadas").html($(".tarefas:selected").length);
+        $("#selecionadas").html($(".tarefa:selected").length);
     })
     </script>
 </body>

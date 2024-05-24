@@ -43,10 +43,10 @@
         <input class="genero" type="checkbox" id="documentario" name="documentario">
         <label for="documentario">Documentário</label><br>
     </form>
-    <p><span>0</span> tarefas realizadas</p>
+    <p><span id="selecionadas">0</span> tarefas realizadas</p>
     <script>
          $('.genero').on("click", function() {
-        $("#selecionadas").html($(".genero:selected").length);
+        $("#selecionadas").html($(".genero:checked").length);
     });
     </script>
 </body>

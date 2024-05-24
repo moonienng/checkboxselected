@@ -11,7 +11,18 @@
 <body>
     <div class="container">
         <input type="text" id="input" placeholder="press enter to add tarks">
-
+<ul></ul>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function()
+    {
+        $('#input').change(function()
+        {
+        var input = $(this).val();
+        $('ul').append('<li>' + input + '</li>');
+        }
+        );
+    });
+    </script>
 </body>
 </html>

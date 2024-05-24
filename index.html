@@ -13,36 +13,41 @@
         <input type="text" placeholder="nos diga seu nome..."> <br>
         <input type="number" placeholder="nos diga sua idade..."> <br>
         <Label>Selecione os seus gêneros de filme favoritos:</Label> <br>
-        <input type="checkbox" id="acao" name="acao">
+        <input class="genero" type="checkbox" id="acao" name="acao">
         <label for="acao">Ação</label><br>
 
-        <input type="checkbox" id="aventura" name="aventura">
+        <input class="genero" type="checkbox" id="aventura" name="aventura">
         <label for="aventura">Aventura</label><br>
 
-        <input type="checkbox" id="comedia" name="comedia">
+        <input class="genero" type="checkbox" id="comedia" name="comedia">
         <label for="comedia">Comédia</label><br>
 
-        <input type="checkbox" id="drama" name="drama">
+        <input class="genero" type="checkbox" id="drama" name="drama">
         <label for="drama">Drama</label><br>
 
-        <input type="checkbox" id="ficcao" name="ficcao">
+        <input class="genero" type="checkbox" id="ficcao" name="ficcao">
         <label for="ficcao">Ficção Científica</label><br>
 
-        <input type="checkbox" id="terror" name="terror">
+        <input class="genero" type="checkbox" id="terror" name="terror">
         <label for="terror">Terror</label><br>
 
-        <input type="checkbox" id="romance" name="romance">
+        <input class="genero" type="checkbox" id="romance" name="romance">
         <label for="romance">Romance</label><br>
 
-        <input type="checkbox" id="fantasia" name="fantasia">
+        <input class="genero" type="checkbox" id="fantasia" name="fantasia">
         <label for="fantasia">Fantasia</label><br>
 
-        <input type="checkbox" id="animacao" name="animacao">
+        <input class="genero" type="checkbox" id="animacao" name="animacao">
         <label for="animacao">Animação</label><br>
 
-        <input type="checkbox" id="documentario" name="documentario">
+        <input class="genero" type="checkbox" id="documentario" name="documentario">
         <label for="documentario">Documentário</label><br>
     </form>
-    </form>
+    <p><span>0</span> tarefas realizadas</p>
+    <script>
+         $('.genero').on("click", function() {
+        $("#selecionadas").html($(".genero:selected").length);
+    });
+    </script>
 </body>
 </html>

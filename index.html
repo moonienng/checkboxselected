@@ -8,9 +8,12 @@
     <script src="scr/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <H1>Quais os gêneros de filme favoritos pelas pessoas?</H1>
+    <header>
+        <H1>Quais os gêneros de filme favoritos pelas pessoas?</H1>
     <p>Essa pesquisa tem o intuito de reunir informações sobre os gêneros de filme favoritos das pessoas e quantos gêneros diferentes as pessoas gostam</p>
-    <form action="#">
+    </header>
+    <main>
+        <form action="#">
         <input type="text" placeholder="nos diga seu nome..."> <br>
         <input type="number" placeholder="nos diga sua idade..."> <br>
         <Label>Selecione os seus gêneros de filme favoritos:</Label> <br>
@@ -45,7 +48,11 @@
         <label for="documentario">Documentário</label><br>
         <input type="submit" value="Enviar">
     </form>
-    <p><span id="selecionadas">0</span> tarefas realizadas</p>
+    </main>
+    <footer>
+        <p><span id="selecionadas">0</span> tarefas realizadas</p>
+    </footer>
+    
     <script>
          $('.genero').on("click", function() {
         $("#selecionadas").html($(".genero:checked").length);

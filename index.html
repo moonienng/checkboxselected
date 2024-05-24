@@ -13,9 +13,25 @@
     <p>Essa pesquisa tem o intuito de reunir informações sobre os gêneros de filme favoritos das pessoas e quantos gêneros diferentes as pessoas gostam</p>
     </header>
     <main>
+
+        
+        
+        
         <form action="#">
         <input type="text" placeholder="nos diga seu nome..."> <br>
         <input type="number" placeholder="nos diga sua idade..."> <br>
+            <label for="genero"> Selecione os seus gêneros favoritos:</label> <br>
+        <select>
+            <option value="acao" class="genero">Ação</option>
+            <option value="aventura" class="genero">Aventura</option>
+            <option value="comedia" class="genero">Comédia</option>
+            <option value="drama" class="genero">Drama</option>
+            <option value="ficcao" class="genero">Ficção Científica</option>
+            <option value="terror" class="genero">Terror</option>
+            <option value="romance" class="genero">Romance</option>
+            <option value="animacao" class="genero">Animação</option>
+        </select>
+        <!---
         <Label>Selecione os seus gêneros de filme favoritos:</Label> <br>
         <input class="genero" type="checkbox" id="acao" name="acao">
         <label for="acao">Ação</label><br>
@@ -46,6 +62,7 @@
 
         <input class="genero" type="checkbox" id="documentario" name="documentario">
         <label for="documentario">Documentário</label><br>
+    -->
         <input type="submit" value="Enviar">
     </form>
     </main>
@@ -55,7 +72,7 @@
     
     <script>
          $('.genero').on("click", function() {
-        $("#selecionadas").html($(".genero:checked").length);
+        $("#selecionadas").html($(".genero:selected").length);
     });
     </script>
 </body>
